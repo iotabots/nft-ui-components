@@ -11,6 +11,7 @@ import Menu from '@mui/material/Menu';
 import Avatar from '@mui/material/Avatar';
 import Twitter from '@mui/icons-material/Twitter';
 import MoreIcon from '@mui/icons-material/MoreVert';
+import { useWeb3React } from '@web3-react/core'
 
 interface NavigationProps {
   children: any;
@@ -20,6 +21,9 @@ const Navigation = ({ children }: NavigationProps) => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] =
     React.useState<null | HTMLElement>(null);
+
+  const web3React = useWeb3React()
+
 
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
@@ -118,10 +122,12 @@ const Navigation = ({ children }: NavigationProps) => {
             component="div"
             sx={{ display: { xs: 'block', sm: 'block' } }}
           >
-            IOTABOTS
+            {web3React ? "true" : "false"}
           </Typography>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+          
+
           <Avatar
             alt="Remy Sharp"
             src="https://assets.iotabots.io/1.png"

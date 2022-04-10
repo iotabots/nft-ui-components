@@ -4,7 +4,7 @@
     "0.22ca0895.iframe.bundle.js.map": "./0.22ca0895.iframe.bundle.js.map",
     "1.1f11c47c.iframe.bundle.js": "./1.1f11c47c.iframe.bundle.js",
     "2.a372bc98.iframe.bundle.js": "./2.a372bc98.iframe.bundle.js",
-    "main.js": "./main.d9660c55.iframe.bundle.js",
+    "main.js": "./main.9d8fc898.iframe.bundle.js",
     "runtime~main.js": "./runtime~main.ad9b3016.iframe.bundle.js",
     "vendors~main.js": "./vendors~main.97347a56.iframe.bundle.js",
     "vendors~main.js.map": "./vendors~main.97347a56.iframe.bundle.js.map",
@@ -32,6 +32,6 @@
   "entrypoints": [
     "runtime~main.ad9b3016.iframe.bundle.js",
     "vendors~main.97347a56.iframe.bundle.js",
-    "main.d9660c55.iframe.bundle.js"
+    "main.9d8fc898.iframe.bundle.js"
   ]
 }
